@@ -1,0 +1,34 @@
+
+###
+
+GET http://localhost:3000/posts
+
+###
+
+GET http://localhost:3000/posts?postOwner=tomer
+
+###
+
+GET http://localhost:3000/posts/674088366365996d79acfdd2
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "Amazing Post",
+    "owner": "tomer",
+    "content": "It will surely work"
+}
+
+###
+
+PUT http://localhost:3000/posts/674088366365996d79acfdd2
+Content-Type: application/json
+
+{
+    "title": "New and amazing post",
+    "owner": "tomer",
+    "content": "Very good job"
+}
